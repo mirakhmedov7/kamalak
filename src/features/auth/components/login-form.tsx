@@ -51,6 +51,7 @@ export function LoginForm() {
                 <Input
                   className="text-base p-7"
                   placeholder="Username"
+                  autoComplete="current-username"
                   {...field}
                 />
               </FormControl>
@@ -68,6 +69,7 @@ export function LoginForm() {
                   className="text-base p-7"
                   placeholder="Password"
                   type="password"
+                  autoComplete="current-password"
                   {...field}
                 />
               </FormControl>

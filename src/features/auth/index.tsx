@@ -27,6 +27,7 @@ export const Login = ({
               alt="kamalak Logo"
               width={185}
               height={40}
+              priority={true}
             />
           </CardTitle>
           <CardDescription className="text-2xl">to get started</CardDescription>
