@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
       <Sidebar />
-      <main className="w-full ml-15">
+      <main className="w-full mx-10">
         <Navbar />
         {children}
       </main>

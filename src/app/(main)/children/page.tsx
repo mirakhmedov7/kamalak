@@ -1,7 +1,8 @@
+import Children from '@/features/children'
 import React from 'react'
 
 const Page = () => {
-  return <div>children</div>
+  return <Children />
 }
 
 export default Page
