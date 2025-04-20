@@ -13,6 +13,18 @@ npm run lint ||
         false; 
 )
 
+npm run build ||
+(
+        echo "
+
+
+
+
+🚨🚨🚨 Ko'dda xatolar topildi, ko'dini yaxshilab tekshirib ko'r Ivan!"
+        false; 
+)
+
+
 echo "
 
 ✅✅✅ Ko'd tekshiruvi muvaffaqiyatli o'tdi, davom etursin bo'lad! ✅✅✅

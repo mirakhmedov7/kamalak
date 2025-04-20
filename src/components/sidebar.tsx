@@ -33,7 +33,7 @@ const AppSidebar = () => {
         <SidebarGroup className="items-center">
           <SidebarMenu className={cn('flex flex-col gap-4 ')}>
             {sidebarPages.map((item) => {
-              const { icon: Icon } = item
+              const Icon = item.icon
               return (
                 <SidebarMenuItem key={item.id}>
                   <SidebarMenuButton asChild size={'lg'}>
@@ -44,7 +44,7 @@ const AppSidebar = () => {
                         `items-center text-lg text-grey transition duration-300 sidebar-item gap-2 [&>svg]:size-auto active:text-white active:scale-95 p-5 hover:!bg-primary hover:text-white rounded-md sidebar-item--${item.id}`
                       )}
                     >
-                      <Icon />
+                      <Icon className="text-xl" />
                       <span className={cn('text-lg')}>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>

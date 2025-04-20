@@ -9,7 +9,7 @@ interface ISidebarPage {
   id: number
   title: string
   url: string
-  icon: string
+  icon: React.FC<React.SVGProps<SVGSVGElement>>
 }
 
 export const sidebarPages: ISidebarPage[] = [
