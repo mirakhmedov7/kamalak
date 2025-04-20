@@ -1,0 +1,3 @@
+echo '🏗️👷 Styling, testing and building your project before committing'
+
+npm run lint

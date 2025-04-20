@@ -10,7 +10,7 @@ const Page = (props: Props) => {
         <div className="w-full max-w-lg">
           <Login />
         </div>
-      </div>{' '}
+      </div>
     </>
   )
 }

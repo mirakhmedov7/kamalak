@@ -1,4 +1,4 @@
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
+import { SidebarProvider } from '@/components/ui/sidebar'
 import { Navbar, Sidebar } from '@/components/index'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
