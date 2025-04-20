@@ -45,12 +45,13 @@
   --color-red: #d70000;
   --color-red-background: #ea9898;
   --color-green: #00ac4f;
-  --color-green-background: #98d9b6;
+  --color-greenbackground: #98d9b6;
   --color-orange: #ff9500;
   --color-yellow: #ffc909;
   --color-yellow-background: #f6f3ec;
   --color-blue: #33bfff;
   --color-blue-background: #ecf3f6;
+  --color-slate: #fafbff;
 }
 
 :root {
@@ -110,21 +111,39 @@ body {
 }
 
 /* hover styles for sidebar icons --start-- */
-.sidebar-item--1:hover path,
-.sidebar-item--2:hover path,
-.sidebar-item--5:hover path,
-.sidebar-item--6:hover path {
+.sidebarIcon-1:hover path,
+.sidebarIcon-2:hover path,
+.sidebarIcon-5:hover path,
+.sidebarIcon-6:hover path {
   @apply fill-white;
 }
 
-.sidebar-item--3:hover path:nth-child(1),
-.sidebar-item--3:hover path:nth-child(3) {
+.sidebarIcon-3:hover path:nth-child(1),
+.sidebarIcon-3:hover path:nth-child(3) {
   @apply fill-white;
 }
-.sidebar-item--3:hover path:nth-child(2) {
+.sidebarIcon-3:hover path:nth-child(2) {
   @apply stroke-white;
 }
-.sidebar-item--4:hover path {
+.sidebarIcon-4:hover path {
   @apply stroke-white;
 }
 /* hover styles for sidebar icons --end-- */
+
+.sidebarIcon-1--active path,
+.sidebarIcon-2--active path,
+.sidebarIcon-5--active path,
+.sidebarIcon-6--active path {
+  @apply fill-white;
+}
+
+.sidebarIcon-3--active path:nth-child(1),
+.sidebarIcon-3--active path:nth-child(3) {
+  @apply fill-white;
+}
+.sidebarIcon-3--active path:nth-child(2) {
+  @apply stroke-white;
+}
+.sidebarIcon-4--active path {
+  @apply stroke-white;
+}

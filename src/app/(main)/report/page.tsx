@@ -1,7 +1,8 @@
+import Report from '@/features/report'
 import React from 'react'
 
 const Page = () => {
-  return <div>Report</div>
+  return <Report />
 }
 
 export default Page

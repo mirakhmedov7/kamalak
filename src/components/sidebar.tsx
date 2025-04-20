@@ -1,3 +1,4 @@
+'use client'
 import {
   Sidebar,
   SidebarContent,
@@ -8,14 +9,17 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from '@/components/ui/sidebar'
+
 import Image from 'next/image'
 import { sidebarPages } from '@/constants/sidebar-pages'
 import Link from 'next/link'
 import { LogOut } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { usePathname } from 'next/navigation'
 
 const AppSidebar = () => {
+  const pathname = usePathname()
   return (
     <Sidebar className="bg-white">
       <SidebarHeader className="p-7">
@@ -40,8 +44,10 @@ const AppSidebar = () => {
                     <Link
                       href={item.url}
                       className={cn(
-                        '',
-                        `items-center text-lg text-grey transition duration-300 sidebar-item gap-2 [&>svg]:size-auto active:text-white active:scale-95 p-5 hover:!bg-primary hover:text-white rounded-md sidebar-item--${item.id}`
+                        `items-center text-lg text-grey transition duration-300 sidebar-item gap-2 [&>svg]:size-auto active:text-white active:scale-95 p-5 hover:!bg-primary hover:text-white rounded-md sidebarIcon-${item.id}`,
+                        item.url === pathname
+                          ? `bg-primary text-white sidebarIcon-${item.id}--active`
+                          : ''
                       )}
                     >
                       <Icon className="text-xl" />

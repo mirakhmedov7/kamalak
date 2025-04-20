@@ -1,12 +1,11 @@
 import { SidebarProvider } from '@/components/ui/sidebar'
-import { AppSidebar, Navbar } from '@/components/index'
+import { Sidebar, Navbar } from '@/components/index'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <Sidebar />
       <main className="w-full ml-15">
-        {/* <SidebarTrigger /> */}
         <Navbar />
         {children}
       </main>
