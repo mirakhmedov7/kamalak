@@ -1,3 +1,22 @@
-echo '🏗️👷 Styling, testing and building your project before committing'
 
-npm run lint
+echo "🚀🚀🚀 Ko'dini tekshirvomman, shoshilma push qilishga!"
+
+
+npm run lint ||
+(
+        echo "
+
+
+
+
+🚨🚨🚨 Ko'dda xatolar topildi, ko'dini yaxshilab tekshirib ko'r Ivan!"
+        false; 
+)
+
+echo "
+
+
+✅✅✅ Ko'd tekshiruvi muvaffaqiyatli o'tdi, davom eting! ✅✅✅
+
+
+ "
