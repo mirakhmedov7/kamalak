@@ -1,5 +1,6 @@
-import Image from 'next/image'
+import { redirect } from 'next/navigation'
 
 export default function Home() {
-  return <div className="text-blue-background">hello world</div>
+  redirect(`/dashboard`)
+  return <div>hello world</div>
 }

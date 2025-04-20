@@ -108,3 +108,23 @@
 body {
   font-family: 'Poppins', 'Poppins Fallback';
 }
+
+/* hover styles for sidebar icons --start-- */
+.sidebar-item--1:hover path,
+.sidebar-item--2:hover path,
+.sidebar-item--5:hover path,
+.sidebar-item--6:hover path {
+  @apply fill-white;
+}
+
+.sidebar-item--3:hover path:nth-child(1),
+.sidebar-item--3:hover path:nth-child(3) {
+  @apply fill-white;
+}
+.sidebar-item--3:hover path:nth-child(2) {
+  @apply stroke-white;
+}
+.sidebar-item--4:hover path {
+  @apply stroke-white;
+}
+/* hover styles for sidebar icons --end-- */
