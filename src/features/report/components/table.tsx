@@ -7,7 +7,6 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-  TableCaption,
 } from '@/components/ui/table'
 
 import { childrenReport, IChildrenReport } from '@/constants/children-report'
