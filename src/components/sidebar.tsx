@@ -19,7 +19,8 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { usePathname } from 'next/navigation'
 
 const AppSidebar = () => {
-  const pathname = usePathname()
+  const pathname = `/${usePathname().split('/')[1]}`
+  console.log(pathname)
   return (
     <Sidebar className="bg-white">
       <SidebarHeader className="p-7">

@@ -40,7 +40,7 @@ export const sidebarPages: ISidebarPage[] = [
   {
     id: 5,
     title: 'Taomnoma',
-    url: '/kitchen',
+    url: '/menu',
     icon: Food,
   },
   {

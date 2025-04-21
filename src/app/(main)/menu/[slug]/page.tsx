@@ -1,8 +1,8 @@
-import Kitchen from '@/features/kitchen'
+import FoodInfo from '@/features/menu/food-info'
 import React from 'react'
 
 const Page = () => {
-  return <Kitchen />
+  return <FoodInfo />
 }
 
 export default Page

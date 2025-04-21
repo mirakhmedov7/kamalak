@@ -11,7 +11,6 @@ import {
 
 import { childrenData as data, IChildrenData } from '@/constants/children-data'
 import Image from 'next/image'
-import { CustomButton } from '@/components/'
 
 import {
   AlertDialog,
@@ -24,6 +23,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
+import { Button } from '@/components/ui/button'
 
 const Table = () => {
   const toggleChildStatus = (id: number) => {
@@ -67,9 +67,9 @@ const Table = () => {
             <TableCell className="text-center">
               <AlertDialog>
                 <AlertDialogTrigger asChild>
-                  <CustomButton variant={item.status ? 'active' : 'inactive'}>
+                  <Button variant={item.status ? 'success' : 'danger'}>
                     {item.status == true ? 'Faol' : 'Nofaol'}
-                  </CustomButton>
+                  </Button>
                 </AlertDialogTrigger>
                 <AlertDialogContent className="w-[400px]">
                   <AlertDialogHeader>
