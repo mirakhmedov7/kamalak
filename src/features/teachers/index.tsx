@@ -2,10 +2,10 @@ import React from 'react'
 import { teacher, ITeacher } from '@/constants/teachers'
 
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { AvatarImage } from '@radix-ui/react-avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 import { Baby, Wallet, TimeBack, IdCard } from '@/../public/assets/index'
+import Link from 'next/link'
 
 const Teachers = () => {
   return (
@@ -18,9 +18,14 @@ const Teachers = () => {
               <AvatarFallback className="text-2xl">B</AvatarFallback>
             </Avatar>
             <div>
-              <h1 className="text-muted-blue font-bold text-xl mb-2">
-                {item.name}
-              </h1>
+              <Link
+                href={`/teachers/${item.id}`}
+                className="hover:underline underline-offset-4 decoration-muted-blue"
+              >
+                <h1 className="text-muted-blue font-bold text-xl mb-2">
+                  {item.name}
+                </h1>
+              </Link>
               <p className="text-muted-blue">{item.phoneNumber}</p>
             </div>
           </CardHeader>
