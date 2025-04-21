@@ -3,6 +3,16 @@ import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
+import Form from './form'
+
 const Header = () => {
   return (
     <div className="flex justify-between items-center">
@@ -18,9 +28,24 @@ const Header = () => {
           <p>Tarbiyachi</p>
         </div>
       </div>
-      <Button size={'lg'} className="text-base">
-        Malumotlarni o’zgartirish
-      </Button>
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button size={'lg'} className="text-base">
+            Malumotlarni o’zgartirish
+          </Button>
+        </DialogTrigger>
+        <DialogContent className='h-[90vh] overflow-y-scroll !max-w-4xl w-full'>
+          <DialogHeader>
+            <DialogTitle className="text-2xl">
+              Bekmirzayeva Nigora Atxamovna
+            </DialogTitle>
+            <DialogDescription className="text-yellow text-xl">
+              Aniqlik bilan to’ldiring!!!
+            </DialogDescription>
+          </DialogHeader>
+          <Form />
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }
