@@ -1,9 +1,8 @@
+import Teachers from '@/features/teachers'
 import React from 'react'
 
 const Page = () => {
-  return (
-    <div>teachers</div>
-  )
+  return <Teachers />
 }
 
 export default Page

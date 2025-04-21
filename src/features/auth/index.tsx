@@ -20,7 +20,7 @@ export const Login = ({
           <CardTitle className="text-4xl flex justify-between">
             Login
             <Image
-              src="/assets/logo-full.svg"
+              src="/assets/icons/logo-full.svg"
               alt="kamalak Logo"
               width={185}
               height={40}

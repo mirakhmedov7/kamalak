@@ -1,9 +1,11 @@
-import Dashboard from '@/../public/assets/sidebar-icons/dashboard.svg'
-import Report from '@/../public/assets/sidebar-icons/report.svg'
-import Children from '@/../public/assets/sidebar-icons/children.svg'
-import Income from '@/../public/assets/sidebar-icons/income.svg'
-import Food from '@/../public/assets/sidebar-icons/food.svg'
-import Teachers from '@/../public/assets/sidebar-icons/teachers.svg'
+import {
+  Dashboard,
+  Report,
+  Children,
+  Income,
+  Food,
+  Teachers,
+} from '../../public/assets/index'
 
 interface ISidebarPage {
   id: number

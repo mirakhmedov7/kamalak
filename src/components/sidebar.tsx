@@ -20,13 +20,12 @@ import { usePathname } from 'next/navigation'
 
 const AppSidebar = () => {
   const pathname = `/${usePathname().split('/')[1]}`
-  console.log(pathname)
   return (
     <Sidebar className="bg-white">
       <SidebarHeader className="p-7">
         <Link href={'/dashboard'}>
           <Image
-            src="/assets/logo-full.svg"
+            src="/assets/icons/logo-full.svg"
             alt="kamalak Logo"
             width={185}
             height={105}
@@ -71,7 +70,7 @@ const AppSidebar = () => {
             >
               <div>
                 <div className="flex items-center gap-2">
-                  <Avatar className="w-10 h-10">
+                  <Avatar className="w-10 h-10 size-11">
                     <AvatarImage src="/assets/avatar.png" />
                     <AvatarFallback>Ma</AvatarFallback>
                   </Avatar>
