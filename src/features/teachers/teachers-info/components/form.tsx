@@ -28,7 +28,7 @@ const TeacherForm = () => {
       email: '',
       password: '',
       confirmPassword: '',
-      salary: 100,
+      salary: 0,
       group: '',
       birthDate: '',
       receivedDate: '',
@@ -321,7 +321,7 @@ const TeacherForm = () => {
             )}
           />
 
-          <DialogFooter className="w-full">
+          <DialogFooter className="w-full col-span-2">
             <Button
               type="submit"
               variant="danger"
